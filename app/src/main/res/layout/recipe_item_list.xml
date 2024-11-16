@@ -9,8 +9,9 @@
 
     <ImageView
         android:id="@+id/RecipeImage"
-        android:layout_width="300dp"
-        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:contentDescription="@string/img_des"
         android:padding="10dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,22 +29,12 @@
         app:layout_constraintTop_toBottomOf="@+id/RecipeImage"
         tools:text="標題" />
 
-    <TextView
-        android:id="@+id/itemDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/itemTitle"
-        app:layout_constraintTop_toTopOf="@+id/itemTitle"
-        tools:text="內容" />
-
     <RelativeLayout
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@color/Gray"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/itemTitle">
+        app:layout_constraintBottom_toBottomOf="@+id/itemTitle">
 
         <TextView
             android:id="@+id/itemReview"

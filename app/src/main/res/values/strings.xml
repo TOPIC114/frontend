@@ -1,20 +1,21 @@
 <resources>
-    <string name="app_name">Idiot Chef Assistant</string>
+    <string name="app_name">傻瓜廚師助手</string>
     <string name="title_activity_login">LoginActivity</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
+    <string name="prompt_email_or_name">信箱或使用者名稱</string>
+    <string name="prompt_password">密碼</string>
+    <string name="action_sign_in">登入</string>
+    <string name="action_register">註冊</string>
     <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="invalid_username">錯誤的使用者名稱或信箱</string>
+    <string name="invalid_email">錯誤的信箱格式</string>
+    <string name="invalid_password">密碼需要大於5個字元</string>
+    <string name="invalid_password_retype">重複輸入的密碼不一致</string>
+    <string name="login_failed">"登入失敗"</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
-    <string name="search_hint">Enter recipe name</string>
-    <string name="search_title">search title</string>
+    <string name="search_hint">輸入食譜</string>
+    <string name="search_title">搜尋標題</string>
     <string name="user_image">user img</string>
 
     <!-- Preference Titles -->
@@ -22,7 +23,7 @@
     <string name="sync_header">interface setting</string>
 
     <!-- Messages Preferences -->
-    <string name="history_title">History</string>
+    <string name="history_title">歷史紀錄</string>
     <string name="reply_title">Default reply action</string>
 
     <!-- Sync Preferences -->
@@ -32,4 +33,30 @@
     <!-- res/values/strings.xml -->
     <string name="user_review">Review: %d stars</string>
 
+    <string name="take_photo">Take Photo</string>
+    <string name="start_capture">Start Capture</string>
+    <string name="stop_capture">Stop Capture</string>
+    <string name="title_activity_result_page">ResultPage</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="upload_image">Upload</string>
+    <string name="Confirm">確認</string>
+    <string name="Cancel">取消</string>
+    <string name="enter_the_ingredient">輸入食材</string>
+    <string name="find_ingredients">尋找調味料</string>
+    <string name="enter_recipe_name">輸入食譜</string>
+    <string name="ingredients_in_recipe">食材:</string>
+    <string name="img_des">img</string>
+    <string name="leave_a_comment">留言</string>
+    <string name="community_title">留言板</string>
+    <string name="upload">上傳</string>
+    <string name="action_in_register">註冊</string>
+    <string name="prompt_email">信箱</string>
+    <string name="prompt_user_name">使用者名稱</string>
+    <string name="register_title">註冊帳號</string>
+    <string name="prompt_password_retype">重新輸入密碼</string>
 </resources>

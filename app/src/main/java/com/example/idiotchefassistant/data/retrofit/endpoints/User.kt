@@ -29,7 +29,6 @@ data class UserResponse(
     val level:Int
 )
 
-
 data class MessageResponse(
     val message:String
 )
@@ -43,7 +42,6 @@ data class SearchResponse(
 )
 
 interface User {
-
     /*
      *  POST /user/login
      *  It's a login endpoint
@@ -52,7 +50,6 @@ interface User {
     fun login(
         @Body loginRequestBody: LoginRequestBody
     ): Call<LoginResponse>
-
     /*
      *  GET /user/me
      *  To get the token owner's information

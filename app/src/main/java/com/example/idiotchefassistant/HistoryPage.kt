@@ -6,6 +6,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.idiotchefassistant.databinding.ActivitySearchPageBinding
+import com.example.idiotchefassistant.recipeBlock.RecipeItem
+import com.example.idiotchefassistant.recipeBlock.RecipeItemAdapter
+import com.example.idiotchefassistant.recipeBlock.RecipePage
 
 class HistoryPage : AppCompatActivity(), RecipeItemAdapter.OnItemClickListener {
     private lateinit var binding: ActivitySearchPageBinding
@@ -23,7 +26,6 @@ class HistoryPage : AppCompatActivity(), RecipeItemAdapter.OnItemClickListener {
         }
         binding.EditText
         val item = mutableListOf<RecipeItem>()
-        item.add(RecipeItem("搜尋食譜歷史", "食譜的描述", 5))
         val recycleView = binding.RecipeRecycleView
         recycleView.layoutManager = LinearLayoutManager(this)
 

@@ -14,7 +14,6 @@ class RetrofitManager internal constructor() {
     val user:User
 
     init {
-
         val okHttpClient = OkHttpClient().newBuilder()
             .connectTimeout(30, TimeUnit.SECONDS) // 設置連線Timeout
             .build()

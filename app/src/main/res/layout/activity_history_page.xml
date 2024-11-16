@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Style_color"
-    tools:context=".SearchPage">
+    tools:context=".searchBlock.SearchPage">
 
     <RelativeLayout
         android:id="@+id/HeadBar"
@@ -30,6 +31,7 @@
             android:id="@+id/SearchBtn"
             android:layout_height="50dp"
             android:layout_width="50dp"
+            android:contentDescription="@string/img_des"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:padding="14dp"
@@ -37,15 +39,16 @@
 
         <EditText
             android:id="@+id/EditText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_toEndOf="@id/SearchBtn"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
             android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/SearchBtn"
             android:background="@color/white"
-            android:hint=" Recipe name" />
+            android:inputType="text"
+            android:autofillHints="autofill"
+            android:hint="@string/enter_recipe_name"
+            android:textColorHint="@color/black"/>
 
     </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView

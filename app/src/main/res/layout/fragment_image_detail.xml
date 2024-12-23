@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".resultBlock.ImageDetailFragment">
+    tools:context=".result.ImageDetailFragment">
 
     <androidx.viewpager2.widget.ViewPager2
     android:id="@+id/viewPager"

@@ -48,18 +48,14 @@ class RegisterPage : AppCompatActivity() {
             }
         })
 
-        registerViewModel.registerResult.observe(this@RegisterPage, Observer {
-            val registerResult = it ?: return@Observer
+        registerViewModel.registerResult.observe(this@RegisterPage) { result ->
             loading.visibility = View.GONE
-            if (registerResult.isEmpty()) {
-                Toast.makeText(applicationContext, registerResult, Toast.LENGTH_SHORT).show()
+            Toast.makeText(applicationContext, result, Toast.LENGTH_SHORT).show()
+            if (result.contains("註冊")) {
+                setResult(Activity.RESULT_OK)
+                finish()
             }
-            if (registerResult.isNotEmpty()) {
-                Toast.makeText(applicationContext, registerResult, Toast.LENGTH_SHORT).show()
-            }
-            setResult(Activity.RESULT_OK)
-            finish()
-        })
+        }
 
         username.afterTextChanged {
             val infoData = RegisterData(
@@ -92,23 +88,36 @@ class RegisterPage : AppCompatActivity() {
         }
 
         passwordRetype.apply {
-            val infoData = RegisterData(
-                username.text.toString(),
-                email.text.toString(),
-                password.text.toString(),
-                passwordRetype.text.toString()
-            )
             afterTextChanged {
+                val infoData = RegisterData(
+                    username.text.toString(),
+                    email.text.toString(),
+                    password.text.toString(),
+                    passwordRetype.text.toString()
+                )
                 registerViewModel.registerDataChange(infoData)
             }
             setOnEditorActionListener { _, actionId, _ ->
                 when (actionId) {
-                    EditorInfo.IME_ACTION_DONE ->
+                    EditorInfo.IME_ACTION_DONE -> {
+                        val infoData = RegisterData(
+                            username.text.toString(),
+                            email.text.toString(),
+                            password.text.toString(),
+                            passwordRetype.text.toString()
+                        )
                         registerViewModel.register(infoData)
+                    }
                 }
                 false
             }
             register.setOnClickListener {
+                val infoData = RegisterData(
+                    username.text.toString(),
+                    email.text.toString(),
+                    password.text.toString(),
+                    passwordRetype.text.toString()
+                )
                 loading.visibility = View.VISIBLE
                 registerViewModel.register(infoData)
             }

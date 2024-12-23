@@ -4,8 +4,9 @@
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/Style_color</item>
-        <item name="colorPrimaryDark">#9A5603</item>
         <item name="colorAccent">@color/Style_color</item>
+        <item name="colorPrimaryVariant">@color/Style_color</item>
+        <item name="colorOnPrimary">@color/white</item>
     </style>
 
     <style name="Theme.IdiotChefAssistant" parent="Base.Theme.IdiotChefAssistant" />

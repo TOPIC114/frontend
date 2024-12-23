@@ -19,8 +19,8 @@
     <string name="user_image">user img</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Setting</string>
-    <string name="sync_header">interface setting</string>
+    <string name="messages_header">設定</string>
+    <string name="sync_header">介面設定</string>
 
     <!-- Messages Preferences -->
     <string name="history_title">歷史紀錄</string>
@@ -33,17 +33,16 @@
     <!-- res/values/strings.xml -->
     <string name="user_review">Review: %d stars</string>
 
-    <string name="take_photo">Take Photo</string>
-    <string name="start_capture">Start Capture</string>
-    <string name="stop_capture">Stop Capture</string>
-    <string name="title_activity_result_page">ResultPage</string>
+    <string name="take_photo">拍攝</string>
+    <string name="start_capture">拍攝</string>
+    <string name="stop_capture">停止</string>
 
     <!-- Messages Preferences -->
     <string name="signature_title">Your signature</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="upload_image">Upload</string>
+    <string name="upload_image">上傳</string>
     <string name="Confirm">確認</string>
     <string name="Cancel">取消</string>
     <string name="enter_the_ingredient">輸入食材</string>
@@ -59,4 +58,27 @@
     <string name="prompt_user_name">使用者名稱</string>
     <string name="register_title">註冊帳號</string>
     <string name="prompt_password_retype">重新輸入密碼</string>
+    <string name="remind_login">尚未登入?</string>
+    <string name="post_comment">撰寫評論</string>
+    <string name="add_ingredient">新增食材</string>
+    <string name="search">搜尋</string>
+    <string name="recipe_video_remind">點擊上方圖片即可觀看教學</string>
+    <string name="recipe_author_title">作者:</string>
+    <string name="your_email">你的信箱</string>
+    <string name="your_name">你的名字</string>
+    <string name="home">主頁</string>
+    <string name="history">歷史紀錄</string>
+    <string name="info">個人資料</string>
+    <string name="about_us">關於我們</string>
+    <string name="about_us_title">關於我們 - 傻瓜廚師助手\n生成式AI控制與食譜推薦系統</string>
+    <string name="about_us_content">我們是國立彰化師範大學資訊工程學系學士畢業專題組。\n主要功能使用Gemini AI模型辨識食材，以辨識到的食材推薦資料庫裡的食譜。\n有手機APP版和網頁版，提供友善界面功能。\n\nThis project, "Dummy Chef Assistance: \nRecipes control and recommendation systems using AI applications" integrates advanced Gemini API ingredient recognition technology with algorithmic filtering to recommend recipes based on identified ingredients. \nThe system aims to enhance user experience by providing relevant and high-quality recipe suggestions. \nIt is available as a mobile app and a web version, offering user-friendly interface functionality.</string>
+    <string name="about_us_title2">特別感謝</string>
+    <string name="about_us_subtitle1">提供我們食譜教學影片授權的YouTuber</string>
+    <string name="about_us_yt1">克里斯餐桌：https://www.youtube.com/@christable0202</string>
+    <string name="about_us_yt2">Rosalina\'s Kitchen 蘿潔塔的廚房: https://www.youtube.com/@RosalinaKitchen</string>
+    <string name="about_us_yt3">菜單研究所：https://www.youtube.com/@menustudy</string>
+    <string name="about_us_subtitle2">網路上的資源</string>
+    <string name="about_us_content2">Gemini API: 提供强大的圖片辨識\nAPI Flaticon: 提供免費的Icon。\n注：本網頁Icon來源為 flaticon</string>
+    <string name="login">登入</string>
+    <string name="logout">登出</string>
 </resources>

@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Style_color"
-    tools:context=".searchBlock.SearchPage">
+    tools:context=".search.SearchPage">
 
     <RelativeLayout
         android:id="@+id/HeadBar"
@@ -33,8 +32,33 @@
             android:padding="14dp"
             android:src="@drawable/nav_home_24"
             android:contentDescription="@string/img_des"
+            android:background="@color/Nothing"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/back_page"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/Nothing"
+            android:src="@drawable/baseline_arrow_left_24"
+            android:contentDescription="@string/img_des"
+            />
+
+
+        <EditText
+            android:id="@+id/EditText"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@id/HomeBtn"
+            android:inputType="text"
+            android:background="@color/white"
+            android:autofillHints="autofill"
+            android:hint="@string/enter_recipe_name"/>
 
         <ImageView
             android:id="@+id/SearchBtn"
@@ -44,29 +68,9 @@
             android:padding="14dp"
             android:src="@drawable/search_24"
             android:contentDescription="@string/img_des"
+            android:background="@color/Nothing"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/EditText"
-            android:layout_width="300dp"
-            android:layout_height="48dp"
-            android:padding="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_toEndOf="@id/HomeBtn"
-            android:background="@color/white"
-            android:inputType="text"
-            android:autofillHints="autofill"
-            android:hint="@string/enter_recipe_name"/>
-
-        <ImageView
-            android:id="@+id/back_page"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/baseline_arrow_left_24"
-            android:contentDescription="@string/img_des"
-            />
 
         <TextView
             android:id="@+id/offset"
@@ -78,6 +82,7 @@
             android:layout_toEndOf="@id/back_page"
             android:text=""
             android:textAlignment="center"
+            android:background="@color/Nothing"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
@@ -87,6 +92,7 @@
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:background="@color/Nothing"
             android:src="@drawable/baseline_arrow_right_24"
             android:contentDescription="@string/img_des"
             />

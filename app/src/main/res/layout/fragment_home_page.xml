@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    tools:context=".HomePage">
+    tools:context=".mainLayout.HomePage">
     <!--camera-->
     <RelativeLayout
         android:id="@+id/PageTail"
@@ -20,6 +20,7 @@
             android:layout_centerInParent="true"
             android:layout_marginBottom="10dp"
             android:paddingBottom="40dp"
+            android:background="@color/Nothing"
             android:src="@drawable/camera_24" />
     </RelativeLayout>
     <!--recipe list-->

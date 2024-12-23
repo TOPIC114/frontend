@@ -9,8 +9,6 @@
         android:layout_width="350dp"
         android:layout_height="450dp"
         android:layout_below="@+id/addButton"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginStart="30dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
@@ -26,7 +24,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="50dp"
         android:layout_marginHorizontal="30dp"
-        android:text="Add Ingredient" />
+        android:text="@string/add_ingredient"
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/searchButton"
@@ -37,6 +36,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="100dp"
         android:layout_marginHorizontal="30dp"
+        android:textStyle="bold"
+        android:text="@string/search" />
 
-        android:text="search" />
 </RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingTop="16dp"
+        android:text="@string/about_us_title"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/Style_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/about_us_content"
+        app:layout_constraintEnd_toEndOf="@id/page_title"
+        app:layout_constraintStart_toStartOf="@id/page_title"
+        app:layout_constraintTop_toBottomOf="@id/page_title" />
+
+    <TextView
+        android:id="@+id/thanks_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingTop="16dp"
+        android:text="@string/about_us_title2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/content"
+        app:layout_constraintStart_toStartOf="@id/content"
+        app:layout_constraintTop_toBottomOf="@id/content" />
+
+    <TextView
+        android:id="@+id/subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingTop="16dp"
+        android:text="@string/about_us_subtitle1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/page_title"
+        app:layout_constraintTop_toBottomOf="@id/thanks_for" />
+
+    <TextView
+        android:id="@+id/yt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/about_us_yt1"
+        app:layout_constraintStart_toStartOf="@id/subtitle1"
+        app:layout_constraintTop_toBottomOf="@id/subtitle1" />
+
+    <TextView
+        android:id="@+id/yt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/about_us_yt2"
+        app:layout_constraintStart_toStartOf="@id/yt1"
+        app:layout_constraintTop_toBottomOf="@id/yt1" />
+
+    <TextView
+        android:id="@+id/yt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/about_us_yt3"
+        app:layout_constraintStart_toStartOf="@id/yt2"
+        app:layout_constraintTop_toBottomOf="@id/yt2" />
+
+
+    <TextView
+        android:id="@+id/subtitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:paddingTop="16dp"
+        android:text="@string/about_us_subtitle2"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/yt3"
+        app:layout_constraintTop_toBottomOf="@id/yt3" />
+
+    <TextView
+        android:id="@+id/content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/about_us_content2"
+        app:layout_constraintStart_toStartOf="@id/subtitle2"
+        app:layout_constraintTop_toBottomOf="@id/subtitle2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

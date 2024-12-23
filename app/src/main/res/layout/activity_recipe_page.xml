@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="20dp"
-    tools:context=".recipeBlock.RecipePage">
+    tools:context=".recipe.RecipePage">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +32,13 @@
             android:src="@drawable/logo"
             android:contentDescription="@string/img_des" />
 
+        <TextView
+            android:id="@+id/video_remind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/recipe_video_remind"
+            />
+
         <!-- Recipe Review -->
         <LinearLayout
             android:layout_width="wrap_content"
@@ -56,6 +64,23 @@
                 android:scaleY="0.6"
                 android:stepSize="1"/>
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/author_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/recipe_author_title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"/>
+
         <!-- Ingredients Menu -->
         <TextView
             android:id="@+id/ingredients_title"
@@ -83,32 +108,24 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:paddingTop="16dp" />
-        <!-- Comment Bar -->
-        <EditText
-            android:id="@+id/comment_bar"
-            android:layout_width="300dp"
-            android:layout_height="48dp"
-            android:autofillHints="autofill"
-            android:inputType="text"
-            android:padding="10dp"
-            android:hint="@string/leave_a_comment"
-            android:paddingTop="16dp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/postButton"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:padding="10dp"
             android:textStyle="bold"
-            android:text="@string/upload"/>
+            android:text="@string/post_comment"/>
 
         <!-- Community Comments Title -->
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/Comments"
-            android:layout_width="350dp"
-            android:layout_height="450dp"
+            android:id="@+id/comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:padding="10dp"
             tools:itemCount="5"
-            tools:listitem="@layout/recipe_commit_item"
+            tools:listitem="@layout/recipe_comment_item"
             android:nestedScrollingEnabled="false"/>
     </LinearLayout>
 </ScrollView>

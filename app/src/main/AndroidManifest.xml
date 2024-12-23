@@ -14,25 +14,23 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo"
-        android:label=""
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="傻瓜廚師"
+        android:name=".MyApp"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.IdiotChefAssistant"
         tools:targetApi="31">
         <activity
-            android:name=".resultBlock.ResultPage"
+            android:name=".result.ResultPage"
             android:exported="false"/>
         <activity
-            android:name=".HistoryPage"
+            android:name=".mainLayout.CameraPage"
             android:exported="false" />
         <activity
-            android:name=".CameraPage"
+            android:name=".recipe.RecipePage"
             android:exported="false" />
         <activity
-            android:name=".recipeBlock.RecipePage"
-            android:exported="false" />
-        <activity
-            android:name=".searchBlock.SearchPage"
+            android:name=".search.SearchPage"
             android:exported="false" />
         <activity
             android:name=".login.LoginActivity"
@@ -42,7 +40,7 @@
             android:name=".register.RegisterPage"
             android:exported="false"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".mainLayout.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
